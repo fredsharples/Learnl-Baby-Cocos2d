@@ -1,5 +1,5 @@
 //
-//  HelloWorldLayer.h
+//  TitleLayer.h
 //  Learnl Baby Cocos2d
 //
 //  Created by Fred Sharples on 3/26/13.
@@ -12,12 +12,12 @@
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
 
-// HelloWorldLayer
-@interface HelloWorldLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
+// TitleLayer
+@interface TitleLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
 {
 }
 
-// returns a CCScene that contains the HelloWorldLayer as the only child
+// returns a CCScene that contains the TitleLayer as the only child
 +(CCScene *) scene;
 
 @end

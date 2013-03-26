@@ -1,5 +1,5 @@
 //
-//  HelloWorldLayer.m
+//  TitleLayer.m
 //  Learnl Baby Cocos2d
 //
 //  Created by Fred Sharples on 3/26/13.
@@ -8,24 +8,24 @@
 
 
 // Import the interfaces
-#import "HelloWorldLayer.h"
+#import "TitleLayer.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 
-#pragma mark - HelloWorldLayer
+#pragma mark - TitleLayer
 
-// HelloWorldLayer implementation
-@implementation HelloWorldLayer
+// TitleLayer implementation
+@implementation TitleLayer
 
-// Helper class method that creates a Scene with the HelloWorldLayer as the only child.
+// Helper class method that creates a Scene with the TitleLayer as the only child.
 +(CCScene *) scene
 {
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
 	// 'layer' is an autorelease object.
-	HelloWorldLayer *layer = [HelloWorldLayer node];
+	TitleLayer *layer = [TitleLayer node];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
