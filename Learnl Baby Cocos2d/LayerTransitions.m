@@ -16,7 +16,7 @@
 
 #import "LayerTransitions.h"
 
-//#import "CCDictionary.h"
+
 
 @implementation LayerTransitions
 
@@ -44,8 +44,8 @@
     
     
     
-	id act1		= [CCTransitionFlipX actionWithAction:[CCFadeTo actionWithDuration:3 opacity:255]];
-	//id act1		= [CCFadeTo actionWithDuration:.5f opacity:255];
+	//id act1		= [CCEaseExponentialOut actionWithAction:[CCFadeTo actionWithDuration:2 opacity:255]];
+	id act1		= [CCFadeTo actionWithDuration:.5f opacity:255];
 	id callBack	= [CCCallFunc actionWithTarget:self selector:@selector(removeOldImage)];
     
 	[currentImage runAction:[CCSequence actions:act1, callBack, nil]];
@@ -79,7 +79,7 @@
         
         //Want to move this from a schedule over to a touch event
 		//[self schedule:@selector(changeLayerTransitionsImage:) interval:(arc4random() % 4) + 1];
-		[self schedule:@selector(changeLayerTransitionsImage:) interval:3];
+		//[self schedule:@selector(changeLayerTransitionsImage:) interval:3];
         
 	}
     

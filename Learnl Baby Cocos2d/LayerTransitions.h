@@ -15,7 +15,6 @@
 	CCArray		*images;
 	CCSprite	*currentImage;
 	CCSprite	*oldImage;
-    
 }
 
 @end
