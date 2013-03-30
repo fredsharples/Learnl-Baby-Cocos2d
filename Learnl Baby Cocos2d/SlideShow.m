@@ -72,8 +72,14 @@
     
 		images = [CCArray new];
 		[images addObject:[CCSprite spriteWithFile:@"screen_bear_image.png"]];
-		[images addObject:[CCSprite spriteWithFile:@"screen_bee_image.png"]];
-		[images addObject:[CCSprite spriteWithFile:@"screen_cat_image.png"]];
+		[images addObject:[CCSprite spriteWithFile:@"screen_bear_drawing_01.png"]];
+		[images addObject:[CCSprite spriteWithFile:@"screen_bear_word.png"]];
+        [images addObject:[CCSprite spriteWithFile:@"screen_bee_image.png"]];
+		[images addObject:[CCSprite spriteWithFile:@"screen_bee_drawing_01.png"]];
+		[images addObject:[CCSprite spriteWithFile:@"screen_bee_word.png"]];
+        [images addObject:[CCSprite spriteWithFile:@"screen_cow_image.png"]];
+		[images addObject:[CCSprite spriteWithFile:@"screen_cowr_drawing_01.png"]];
+		[images addObject:[CCSprite spriteWithFile:@"screen_cow_word.png"]];
 		
         //FS need to make sequenctial
 		imageIndex = [NSNumber numberWithInt:(arc4random() % ( [images count] - 1 ))];
