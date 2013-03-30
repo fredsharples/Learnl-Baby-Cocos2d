@@ -42,10 +42,12 @@
     
 	[self addChild:currentImage z:1];
     
+    //CCFlipX3D* act1 = [CCFlipX3D actionWithDuration:3.0];
     
+	//id act1		= [CCEaseExponentialOut actionWithAction:[CCFadeTo actionWithDuration:3 opacity:255]];
+	//CCFlipY *act1 = [CCFlipY actionWithFlipY:YES];
     
-	id act1		= [CCEaseExponentialOut actionWithAction:[CCFadeTo actionWithDuration:3 opacity:255]];
-	//id act1		= [CCFadeTo actionWithDuration:.5f opacity:255];
+    id act1		= [CCFadeTo actionWithDuration:.5f opacity:255];
 	id callBack	= [CCCallFunc actionWithTarget:self selector:@selector(removeOldImage)];
     
 	[currentImage runAction:[CCSequence actions:act1, callBack, nil]];
@@ -74,11 +76,13 @@
 		[images addObject:[CCSprite spriteWithFile:@"screen_bear_image.png"]];
 		[images addObject:[CCSprite spriteWithFile:@"screen_bear_drawing_01.png"]];
 		[images addObject:[CCSprite spriteWithFile:@"screen_bear_word.png"]];
+        
         [images addObject:[CCSprite spriteWithFile:@"screen_bee_image.png"]];
 		[images addObject:[CCSprite spriteWithFile:@"screen_bee_drawing_01.png"]];
 		[images addObject:[CCSprite spriteWithFile:@"screen_bee_word.png"]];
+        
         [images addObject:[CCSprite spriteWithFile:@"screen_cow_image.png"]];
-		[images addObject:[CCSprite spriteWithFile:@"screen_cowr_drawing_01.png"]];
+		[images addObject:[CCSprite spriteWithFile:@"screen_cow_drawing_01.png"]];
 		[images addObject:[CCSprite spriteWithFile:@"screen_cow_word.png"]];
 		
         //FS need to make sequenctial
@@ -87,7 +91,7 @@
 		[self setNewImage];
         
 		//[self schedule:@selector(changeSlideShowImage:) interval:(arc4random() % 4) + 1];
-		[self schedule:@selector(changeSlideShowImage:) interval:3];
+		//[self schedule:@selector(changeSlideShowImage:) interval:3];
         
 	}
     
@@ -110,6 +114,17 @@
 	[self setNewImage];
     
 }
+
+- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    // Choose one of the touches to work with
+    //UITouch *touch = [touches anyObject];
+    
+    [self changeSlideShowImage:0];
+        
+    
+}
+
 
 /*------------------------------------------------------------------------------------------------*\
  |* DISPOSE METHODS -------------------------------------------------------------------------------*|
