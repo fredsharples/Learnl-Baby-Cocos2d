@@ -124,6 +124,10 @@
 	// make main window visible
 	[window_ makeKeyAndVisible];
     
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"testdata" ofType:@"plist"];
+	NSDictionary *_gameData = [NSDictionary dictionaryWithContentsOfFile:filePath];
+	
 	return YES;
 }
 

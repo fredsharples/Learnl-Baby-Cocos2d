@@ -7,7 +7,7 @@
 //
 
 #import "GameLayer.h"
-#import "LayerTransitions.h"
+#import "SlideShow.h"
 
 
 
@@ -64,8 +64,6 @@
     //UITouch *touch = [touches anyObject];
     
     //FS go to next image in the sequence...
-    //[LayerTransitions setNewImage];
-    [self schedule:@selector(changeLayerTransitionsImage:) interval:3];
     
 }
 
@@ -74,9 +72,9 @@
 	[super onEnter];
     CGSize size = [[CCDirector sharedDirector] winSize];
     
-    GameLayer *LayerTransitions = [GameLayer node];
-    LayerTransitions.position = ccp(size.width/2, size.height/2);
-    [self addChild:LayerTransitions];
+    GameLayer *slideShow = [ImageSlideShow node];
+    slideShow.position = ccp(size.width/2, size.height/2);
+    [self addChild:slideShow];
 }
 -(void) nextScene
 {

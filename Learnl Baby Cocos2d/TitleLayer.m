@@ -72,7 +72,7 @@
     //UITouch *touch = [touches anyObject];
     
 
-        [[CCDirector sharedDirector] replaceScene:[CCTransitionCrossFade transitionWithDuration:2.0 scene:[GameLayer scene] ]];
+        [[CCDirector sharedDirector] replaceScene:[CCTransitionCrossFade transitionWithDuration:1.0 scene:[GameLayer scene] ]];
         
         
 }
