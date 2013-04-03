@@ -69,8 +69,6 @@
         
         //NSDictionary *integerDictionary = [[NSDictionary alloc] initWithContentsOfFile:dictionaryPath];
 
-        
-        
     
 		images = [CCArray new];
 		[images addObject:[CCSprite spriteWithFile:@"screen_bear_image.png"]];
@@ -120,7 +118,7 @@
     // Choose one of the touches to work with
     //UITouch *touch = [touches anyObject];
     
-    [self changeSlideShowImage:0];
+    [self changeSlideShowImage:3];
         
     
 }
