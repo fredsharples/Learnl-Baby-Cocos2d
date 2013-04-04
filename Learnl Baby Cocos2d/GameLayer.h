@@ -19,5 +19,8 @@
 @end
 @interface TransitionLayer_B : CCLayer
 
+// returns a CCScene that contains the TitleLayer as the only child
++(CCScene *) scene;
+
 @end
 
