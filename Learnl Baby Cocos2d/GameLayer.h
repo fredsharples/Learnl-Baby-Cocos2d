@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CCLayer.h"
 #import "cocos2d.h"
+#define TRANSITION_DURATION (1.2f)
 
 @interface GameLayer : CCLayer
-{
-}
-// returns a CCScene that contains the TitleLayer as the only child
-+(CCScene *) scene;
 
 @end
+@interface TransitionLayer_A : CCLayer
+
+@end
+@interface TransitionLayer_B : CCLayer
+
+@end
+
