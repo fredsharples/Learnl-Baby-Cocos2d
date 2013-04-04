@@ -12,15 +12,15 @@
 #define TRANSITION_DURATION (1.2f)
 
 @interface GameLayer : CCLayer
-
+// returns a CCScene that contains GameLayer
++(CCScene *) scene;
 @end
+//layer for going back and forth with transitions
 @interface TransitionLayer_A : CCLayer
 
 @end
+//2nd layer for going back and forth with transitions
 @interface TransitionLayer_B : CCLayer
-
-// returns a CCScene that contains the TitleLayer as the only child
-+(CCScene *) scene;
 
 @end
 

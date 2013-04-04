@@ -75,13 +75,13 @@ Class restartTransition()
 		y = s.height;
         
 		CCSprite *bg1 = [CCSprite spriteWithFile:@"screen_cat_drawing_01.png"];
-        
+        bg1.rotation = 90;
 		bg1.position = ccp(s.width/2, s.height/2);
 		[self addChild:bg1 z:-1];
         
         //Put extra screen items here
 		
-		
+		[self setTouchEnabled:YES];
 		[self schedule:@selector(step:) interval:1.0f];
 	}
     
@@ -174,10 +174,11 @@ Class restartTransition()
 		y = size.height;
         
 		CCSprite *bg2 = [CCSprite spriteWithFile:@"screen_bear_drawing_01.png"];
-        
+        bg2.rotation = 90;
 		bg2.position = ccp(size.width/2, size.height/2);
 		[self addChild:bg2 z:-1];
         
+        [self setTouchEnabled:YES];
 		
 		[self schedule:@selector(step:) interval:1.0f];
 	}
