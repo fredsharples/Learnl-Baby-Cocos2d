@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B694B59D1703702600677B34 /* testdata.plist in Resources */ = {isa = PBXBuildFile; fileRef = B694B59C1703702600677B34 /* testdata.plist */; };
+		B6AE224A170E280100FA0E42 /* SlideShow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE2249170E280100FA0E42 /* SlideShow.m */; };
 		B6DCA6B517021668001CF1AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DCA6B417021668001CF1AB /* QuartzCore.framework */; };
 		B6DCA6B717021668001CF1AB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DCA6B617021668001CF1AB /* OpenGLES.framework */; };
 		B6DCA6B917021668001CF1AB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DCA6B817021668001CF1AB /* OpenAL.framework */; };
@@ -145,6 +146,8 @@
 
 /* Begin PBXFileReference section */
 		B694B59C1703702600677B34 /* testdata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testdata.plist; sourceTree = "<group>"; };
+		B6AE2248170E280100FA0E42 /* SlideShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideShow.h; sourceTree = "<group>"; };
+		B6AE2249170E280100FA0E42 /* SlideShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideShow.m; sourceTree = "<group>"; };
 		B6DCA6B117021668001CF1AB /* Learnl Baby Cocos2d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learnl Baby Cocos2d.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DCA6B417021668001CF1AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B6DCA6B617021668001CF1AB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -687,6 +690,8 @@
 		B6DCA6C617021668001CF1AB /* Learnl Baby Cocos2d */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE2248170E280100FA0E42 /* SlideShow.h */,
+				B6AE2249170E280100FA0E42 /* SlideShow.m */,
 				B6DCA8541702166C001CF1AB /* AppDelegate.h */,
 				B6DCA8551702166C001CF1AB /* AppDelegate.m */,
 				B6DCA8571702166C001CF1AB /* TitleLayer.h */,
@@ -1496,6 +1501,7 @@
 				B6DCA8591702166C001CF1AB /* TitleLayer.m in Sources */,
 				B6DCA85C1702166C001CF1AB /* LegalLayer.m in Sources */,
 				B6DCA97C1702266A001CF1AB /* GameLayer.m in Sources */,
+				B6AE224A170E280100FA0E42 /* SlideShow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
