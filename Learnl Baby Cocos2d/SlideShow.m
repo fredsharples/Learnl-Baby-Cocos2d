@@ -83,7 +83,7 @@
 		[images addObject:[CCSprite spriteWithFile:@"screen_cow_drawing_01.png"]];
 		[images addObject:[CCSprite spriteWithFile:@"screen_cow_word.png"]];
 		
-        //FS need to make sequenctial
+        //FS need to make sequencial
 		imageIndex = [NSNumber numberWithInt:(arc4random() % ( [images count] - 1 ))];
         
 		[self setNewImage];

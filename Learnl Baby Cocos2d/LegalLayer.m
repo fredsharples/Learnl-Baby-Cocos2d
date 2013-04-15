@@ -61,7 +61,7 @@
 -(void) onEnter
 {
 	[super onEnter];
-    [self performSelector:@selector(nextScene) withObject:nil afterDelay:3.0f];
+    [self performSelector:@selector(nextScene) withObject:nil afterDelay:0.5f];
 }
 -(void) nextScene
 {

@@ -70,7 +70,7 @@
     
     // Choose one of the touches to work with
     //UITouch *touch = [touches anyObject];
-    
+
 
         [[CCDirector sharedDirector] replaceScene:[CCTransitionCrossFade transitionWithDuration:1.0 scene:[GameLayer  scene] ]];
 }

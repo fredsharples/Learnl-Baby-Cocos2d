@@ -20,6 +20,9 @@ NSNumber	*imageIndex;
 }
 
 +(CCScene *) scene;
+
+@property (readonly) CCArray *spriteList;
+
 @end
 
 //layer for going back and forth with transitions
