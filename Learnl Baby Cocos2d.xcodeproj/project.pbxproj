@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B68654BC172F32D1003588EA /* LayerA.m in Sources */ = {isa = PBXBuildFile; fileRef = B68654B9172F32D1003588EA /* LayerA.m */; };
+		B68654BD172F32D1003588EA /* LayerB.m in Sources */ = {isa = PBXBuildFile; fileRef = B68654BB172F32D1003588EA /* LayerB.m */; };
 		B694B59D1703702600677B34 /* testdata.plist in Resources */ = {isa = PBXBuildFile; fileRef = B694B59C1703702600677B34 /* testdata.plist */; };
 		B6AE224A170E280100FA0E42 /* SlideShow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE2249170E280100FA0E42 /* SlideShow.m */; };
 		B6DCA6B517021668001CF1AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DCA6B417021668001CF1AB /* QuartzCore.framework */; };
@@ -145,6 +147,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B68654B8172F32D1003588EA /* LayerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerA.h; sourceTree = "<group>"; };
+		B68654B9172F32D1003588EA /* LayerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerA.m; sourceTree = "<group>"; };
+		B68654BA172F32D1003588EA /* LayerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerB.h; sourceTree = "<group>"; };
+		B68654BB172F32D1003588EA /* LayerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerB.m; sourceTree = "<group>"; };
 		B694B59C1703702600677B34 /* testdata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testdata.plist; sourceTree = "<group>"; };
 		B6AE2248170E280100FA0E42 /* SlideShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideShow.h; sourceTree = "<group>"; };
 		B6AE2249170E280100FA0E42 /* SlideShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideShow.m; sourceTree = "<group>"; };
@@ -700,6 +706,10 @@
 				B6DCA85B1702166C001CF1AB /* LegalLayer.m */,
 				B6DCA97A17022669001CF1AB /* GameLayer.h */,
 				B6DCA97B17022669001CF1AB /* GameLayer.m */,
+				B68654B8172F32D1003588EA /* LayerA.h */,
+				B68654B9172F32D1003588EA /* LayerA.m */,
+				B68654BA172F32D1003588EA /* LayerB.h */,
+				B68654BB172F32D1003588EA /* LayerB.m */,
 				B6DCA6C717021668001CF1AB /* Resources */,
 				B6DCA6DF17021669001CF1AB /* libs */,
 				B6DCA8501702166C001CF1AB /* Supporting Files */,
@@ -1502,6 +1512,8 @@
 				B6DCA85C1702166C001CF1AB /* LegalLayer.m in Sources */,
 				B6DCA97C1702266A001CF1AB /* GameLayer.m in Sources */,
 				B6AE224A170E280100FA0E42 /* SlideShow.m in Sources */,
+				B68654BC172F32D1003588EA /* LayerA.m in Sources */,
+				B68654BD172F32D1003588EA /* LayerB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

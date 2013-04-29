@@ -75,13 +75,13 @@ Class restartTransition()
 {
 	if( (self=[super init]) ) {
         
-		float x,y;
+		//float x,y;
         
-		CGSize s = [[CCDirector sharedDirector] winSize];
-		x = s.width;
-		y = s.height;
+		//CGSize s = [[CCDirector sharedDirector] winSize];
+		//x = s.width;
+		//y = s.height;
         
-        GameLayer *gameObj;
+        //GameLayer *gameObj;
         
         //imageIndex = [NSNumber numberWithInt:3];
         
@@ -97,12 +97,12 @@ Class restartTransition()
         //CCArray *tempArray = gameObj.spriteList;
         
         imageIndex = [NSNumber numberWithInt:2];
-        CCSprite *bg1 = [gameObj.spriteList objectAtIndex:[imageIndex intValue]];
+       // CCSprite *bg1 = [gameObj.spriteList objectAtIndex:[imageIndex intValue]];
 
         
-        bg1.rotation = 90;
-		bg1.position = ccp(s.width/2, s.height/2);
-		[self addChild:bg1 z:-1];
+        //bg1.rotation = 90;
+		//bg1.position = ccp(s.width/2, s.height/2);
+		//[self addChild:bg1 z:-1];
         
         NSLog(@"------> Scene#1 init!");
         //Put extra screen items here
@@ -323,6 +323,7 @@ Class restartTransition()
     [images_ addObject:[CCSprite spriteWithFile:@"screen_cow_drawing_01.png"]];
     [images_ addObject:[CCSprite spriteWithFile:@"screen_cow_word.png"]];
     NSLog(@"------> GameLayer SpriteList Built");
+    
 }
 
 
@@ -336,7 +337,7 @@ Class restartTransition()
 		NSLog(@"------> GameLayer init");
        
         //Set up the asset filename list (temp) will get from a plist later.
-        [self buildSpriteList];
+       // [self buildSpriteList];
         
         CCSprite *background;
         

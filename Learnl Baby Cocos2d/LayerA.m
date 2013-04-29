@@ -1,34 +1,26 @@
 //
-//  TitleLayer.m
-//  Learnl Baby Cocos2d
+//  LayerA.m
+//  Concentration
 //
-//  Created by Fred Sharples on 3/26/13.
-//  Copyright Fred Sharples 2013. All rights reserved.
+//  Created by Fred Sharples on 4/29/13.
+//  Copyright 2013 Fred Sharples. All rights reserved.
 //
 
-
-// Import the interfaces
-#import "TitleLayer.h"
-#import "GameLayer.h"
 #import "LayerA.h"
-
-// Needed to obtain the Navigation Controller
+#import "LayerB.h"
 #import "AppDelegate.h"
-#import "SimpleAudioEngine.h"
 
-#pragma mark - TitleLayer
 
-// TitleLayer implementation
-@implementation TitleLayer
 
-// Helper class method that creates a Scene with the TitleLayer as the only child.
+@implementation LayerA
+// Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 +(CCScene *) scene
 {
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
 	// 'layer' is an autorelease object.
-	TitleLayer *layer = [TitleLayer node];
+	LayerA *layer = [LayerA node];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
@@ -37,20 +29,20 @@
 	return scene;
 }
 
-// on "init" you need to initialize your instance
+//
 -(id) init
 {
-	// always call "super" init
-	// Apple recommends to re-assign "self" with the "super's" return value
-	if( (self=[super init]) ) {
-		
-        CCSprite *background;
+	if( (self=[super init])) {
+        
+        [self setTouchEnabled:YES];
         
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
+        
+		CCSprite *background;
 		
 		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ) {
-			background = [CCSprite spriteWithFile:@"screen_splash.png"];
+			background = [CCSprite spriteWithFile:@"Default.png"];
 			background.rotation = 90;
 		} else {
 			background = [CCSprite spriteWithFile:@"Default-Landscape~ipad.png"];
@@ -60,24 +52,41 @@
 		// add the label as a child to this Layer
 		[self addChild: background];
         
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"MUSIC_intro.caf"];
-        [self setTouchEnabled:YES];
+        // create and initialize a Label
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Layer A" fontName:@"Marker Felt" fontSize:64];
+        
+        
+		// position the label on the center of the screen
+		label.position =  ccp( size.width /2 , size.height/2 );
+		
+		// add the label as a child to this Layer
+		[self addChild: label];
 
 	}
+	
 	return self;
+}
+
+-(void) onEnter
+{
+	[super onEnter];
+	//[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[LayerB scene] ]];
+}
+-(void) goNextScene
+{
+    NSLog(@"goNextScene called in Layer A");
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[LayerB scene] ]];
 }
 
 - (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     
     // Choose one of the touches to work with
     //UITouch *touch = [touches anyObject];
-
-
-        [[CCDirector sharedDirector] replaceScene:[CCTransitionCrossFade transitionWithDuration:1.0 scene:[LayerA  scene] ]];
+    
+    [self goNextScene];
+    
+    
 }
-
-
-
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
 {
