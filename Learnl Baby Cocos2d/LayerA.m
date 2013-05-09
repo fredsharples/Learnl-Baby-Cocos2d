@@ -9,6 +9,8 @@
 #import "LayerA.h"
 #import "LayerB.h"
 #import "AppDelegate.h"
+#import "GameLogic.h"
+
 
 
 
@@ -34,15 +36,25 @@
 {
 	if( (self=[super init])) {
         
+        
         [self setTouchEnabled:YES];
         
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
         
 		CCSprite *background;
+        
+        GameLogic  * gameLogic_;
+        gameLogic_ = [[GameLogic alloc] init];
+        
+        //[gameLogic_ changeSlideShowImage:3];
 		
 		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ) {
-			background = [CCSprite spriteWithFile:@"Default.png"];
+			//background = [CCSprite spriteWithFile:@"Default.png"];
+            
+            background = [gameLogic_ spriteName_];
+           
+            
 			background.rotation = 90;
 		} else {
 			background = [CCSprite spriteWithFile:@"Default-Landscape~ipad.png"];

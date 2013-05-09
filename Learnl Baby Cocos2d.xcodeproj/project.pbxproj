@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B685DFFD172F446700636D31 /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = B685DFFC172F446700636D31 /* GameLogic.m */; };
 		B68654BC172F32D1003588EA /* LayerA.m in Sources */ = {isa = PBXBuildFile; fileRef = B68654B9172F32D1003588EA /* LayerA.m */; };
 		B68654BD172F32D1003588EA /* LayerB.m in Sources */ = {isa = PBXBuildFile; fileRef = B68654BB172F32D1003588EA /* LayerB.m */; };
 		B686559C172F3B51003588EA /* EL_bear.caf in Resources */ = {isa = PBXBuildFile; fileRef = B68654C1172F3B50003588EA /* EL_bear.caf */; };
@@ -348,6 +349,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B685DFFB172F446700636D31 /* GameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
+		B685DFFC172F446700636D31 /* GameLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLogic.m; sourceTree = "<group>"; };
 		B68654B8172F32D1003588EA /* LayerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerA.h; sourceTree = "<group>"; };
 		B68654B9172F32D1003588EA /* LayerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerA.m; sourceTree = "<group>"; };
 		B68654BA172F32D1003588EA /* LayerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerB.h; sourceTree = "<group>"; };
@@ -1165,6 +1168,8 @@
 			children = (
 				B6AE2248170E280100FA0E42 /* SlideShow.h */,
 				B6AE2249170E280100FA0E42 /* SlideShow.m */,
+				B685DFFB172F446700636D31 /* GameLogic.h */,
+				B685DFFC172F446700636D31 /* GameLogic.m */,
 				B6DCA8541702166C001CF1AB /* AppDelegate.h */,
 				B6DCA8551702166C001CF1AB /* AppDelegate.m */,
 				B6DCA8571702166C001CF1AB /* TitleLayer.h */,
@@ -1934,6 +1939,7 @@
 				B6AE224A170E280100FA0E42 /* SlideShow.m in Sources */,
 				B68654BC172F32D1003588EA /* LayerA.m in Sources */,
 				B68654BD172F32D1003588EA /* LayerB.m in Sources */,
+				B685DFFD172F446700636D31 /* GameLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

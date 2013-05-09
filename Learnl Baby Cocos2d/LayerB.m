@@ -9,7 +9,7 @@
 #import "LayerA.h"
 #import "LayerB.h"
 #import "AppDelegate.h"
-
+#import "GameLogic.h"
 
 
 @implementation LayerB
@@ -34,6 +34,10 @@
 {
 	if( (self=[super init])) {
         
+        
+        GameLogic  * gameLogic_;
+        gameLogic_ = [[GameLogic alloc] init];
+
       [self setTouchEnabled:YES];
         
 		// ask director for the window size
@@ -42,7 +46,9 @@
 		CCSprite *background;
 		
 		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ) {
-			background = [CCSprite spriteWithFile:@"Default.png"];
+             background = [gameLogic_ spriteName_];
+            
+			//background = [CCSprite spriteWithFile:@"Default.png"];
 			background.rotation = 90;
 		} else {
 			background = [CCSprite spriteWithFile:@"Default-Landscape~ipad.png"];
@@ -53,14 +59,14 @@
 		[self addChild: background];
         
         // create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Layer B" fontName:@"Marker Felt" fontSize:64];
+		//CCLabelTTF *label = [CCLabelTTF labelWithString:@"Layer B" fontName:@"Marker Felt" fontSize:64];
         
         
 		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
+		//label.position =  ccp( size.width /2 , size.height/2 );
 		
 		// add the label as a child to this Layer
-		[self addChild: label];
+		//[self addChild: label];
         
 	}
 	

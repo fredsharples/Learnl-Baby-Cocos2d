@@ -10,6 +10,8 @@
 
 #import "AppDelegate.h"
 #import "LegalLayer.h"
+#import "GameLogic.h"
+
 
 @implementation MyNavigationController
 
@@ -127,6 +129,10 @@
     
     //NSString *filePath = [[NSBundle mainBundle] pathForResource:@"testdata" ofType:@"plist"];
 	//NSDictionary *_gameData = [NSDictionary dictionaryWithContentsOfFile:filePath];
+
+    
+    
+    
 	
 	return YES;
 }
