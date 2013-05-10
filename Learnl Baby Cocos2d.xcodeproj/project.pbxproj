@@ -349,6 +349,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6648D41173C4EA8006C84D1 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		B685DFFB172F446700636D31 /* GameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
 		B685DFFC172F446700636D31 /* GameLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLogic.m; sourceTree = "<group>"; };
 		B68654B8172F32D1003588EA /* LayerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerA.h; sourceTree = "<group>"; };
@@ -1166,12 +1167,12 @@
 		B6DCA6C617021668001CF1AB /* Learnl Baby Cocos2d */ = {
 			isa = PBXGroup;
 			children = (
+				B6DCA8541702166C001CF1AB /* AppDelegate.h */,
+				B6DCA8551702166C001CF1AB /* AppDelegate.m */,
 				B6AE2248170E280100FA0E42 /* SlideShow.h */,
 				B6AE2249170E280100FA0E42 /* SlideShow.m */,
 				B685DFFB172F446700636D31 /* GameLogic.h */,
 				B685DFFC172F446700636D31 /* GameLogic.m */,
-				B6DCA8541702166C001CF1AB /* AppDelegate.h */,
-				B6DCA8551702166C001CF1AB /* AppDelegate.m */,
 				B6DCA8571702166C001CF1AB /* TitleLayer.h */,
 				B6DCA8581702166C001CF1AB /* TitleLayer.m */,
 				B6DCA85A1702166C001CF1AB /* LegalLayer.h */,
@@ -1545,6 +1546,7 @@
 			children = (
 				B6DCA8511702166C001CF1AB /* Prefix.pch */,
 				B6DCA8521702166C001CF1AB /* main.m */,
+				B6648D41173C4EA8006C84D1 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
